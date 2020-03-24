@@ -1,4 +1,5 @@
-/// <reference types="cypress" />
+
+
 describe('Test-Suite Name', () => {
   it('Test Case Name : Register User', () => {
     
