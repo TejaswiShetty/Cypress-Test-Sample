@@ -1,5 +1,5 @@
 {
-  "name": "cypress-test-tiny",
+  "name": "cypress-test-sample",
   "version": "1.0.0",
   "description": "Small project for quickly testing Cypress.io test runner",
   "scripts": {
@@ -12,9 +12,10 @@
     "set-status": "set-status"
   },
   "keywords": [],
-  "author": "Gleb Bahmutov <gleb@cypress.io>",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
+    "cypress": "^4.2.0",
     "ok-file": "1.5.2"
   },
   "repository": {
