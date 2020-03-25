@@ -1,5 +1,5 @@
 /// <reference types="cypress" />
-var testData = require('../support/TestData/employee_data.json')
+var testData = require('../../fixtures/employee_data.json')
 
 describe('Test-Suite Name', () => {
     it('Test Case Name : Register User', () => {
