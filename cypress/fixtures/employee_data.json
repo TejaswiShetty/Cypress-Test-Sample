@@ -1,6 +1,8 @@
 {
     "Employees": [
         {
+            "username":"test+testcompany@bayzat.com",
+            "password":"123456789",
             "userId": "random_111",
             "jobTitleName": "Developer",
             "firstName": "test_xyz",
@@ -12,6 +14,8 @@
             "emailAddress": "sdbf@abc.com"
         },
         {
+            "username":"test+testcompany@bayzat.com",
+            "password":"123456789",
             "userId": "random_222",
             "jobTitleName": "Tester",
             "firstName": "bskdf",
@@ -23,6 +27,8 @@
             "emailAddress": "abc@abc.com"
         },
         {
+            "username":"test+testcompany@bayzat.com",
+            "password":"123456789",
             "userId": "random_111",
             "jobTitleName": "Developer",
             "firstName": "test_xyz",

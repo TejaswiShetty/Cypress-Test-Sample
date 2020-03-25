@@ -2,7 +2,7 @@
 var testData = require('../../fixtures/employee_data.json')
 
 describe('Test-Suite Name', () => {
-    it('Test Case Name : Register User', () => {
+    it('Test Case Name : Employee login', () => {
       
       // first visit the site
       cy.visit('https://www.bayzat.com/')
@@ -10,11 +10,14 @@ describe('Test-Suite Name', () => {
       cy.get("@Sign_In_Link").click()
 
 
-      console.log("test data 1:"+testData.Employees[0]);
-      console.log("test data 2:"+testData.Employees[0].userId);
-
-
-      cy.get('#ember11-field').type(testData.Employees[0].userId);
+      cy.get("input[name='username']").should('be.visible').type(testData.Employees[0].username)
+      cy.get("input[name='password']").type(testData.Employees[0].password)
+      cy.get("button[type='submit']").click()
+      
+      cy.url().should('include', '/dashboard');
+      cy.get('span:contains("View Team")').should('be.visible').click();
+      cy.get('span:contains("Add Employees")').should('be.visible').click();
+      cy.get('a[href="/enterprise/dashboard/employees/create"]').should('be.visible').click();
 
       Cypress.on('uncaught:exception', (err, runnable) => {
         // returning false here prevents Cypress from
@@ -24,5 +27,19 @@ describe('Test-Suite Name', () => {
       
 
     })
+
+    // it('Test Case Name : Adding Employee', () => {
+      
+    //   cy.get('span:contains("Add Employees")').should('be.visible').click();
+    //   cy.get('a:contains("Add Employee")').should('be.visible').click();
+
+    //   Cypress.on('uncaught:exception', (err, runnable) => {
+    //     // returning false here prevents Cypress from
+    //     // failing the test
+    //     return false
+    // })
+    // })
+
+
   })
   
