@@ -11,7 +11,17 @@
             "employeeCode": "E1",
             "region": "ABC",
             "phoneNumber": "0972357203957",
-            "emailAddress": "sdbf@abc.com"
+            "workPhoneNumber": "0972357203957",
+            "emailAddress": "sdbf@abc.com",
+            "dob":"01/01/1987",
+             "nationality":"Indian",
+             "gender":"Male",
+             "title":"Engineer",
+             "hiringDate":"01/01/2020",
+             "probationEndDate":"01/01/2021",
+             "workWeek":"Default",
+             "legalCountry":"India",
+             "insured":"No"                  
         },
         {
             "username":"test+testcompany@bayzat.com",
