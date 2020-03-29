@@ -4,7 +4,7 @@
 ```
 npm install && npm run cypress:open
 ```
-###### Running headless :
+###### Running headless(with video) :
 ```
 npm install && cypress:run
 ```
